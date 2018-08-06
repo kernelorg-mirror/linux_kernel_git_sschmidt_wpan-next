@@ -72,6 +72,8 @@ test_6lowpan_ping6 () {
 	test_result_check "6LoWPAN ping6: 1280 MTU to check IPv6 compliance (1272 + 8), XXX frames:"
 }
 
+source ieee802154.local
+
 test_setup_env
 test_simple_setup_hwsim
 test_6lowpan_ping6
